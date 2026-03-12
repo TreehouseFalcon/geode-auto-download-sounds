@@ -31,8 +31,8 @@ bool AutoDownloadCustomSongWidget::init(SongInfoObject* songInfo, CustomSongDele
 
 // Prevents Newgrounds policy crash (@RayDeeUx) //
 void AutoDownloadCustomSongWidget::forceAcceptNewgroundsPolicy() {
-	if (Settings::shouldAutoAcceptNewgroundsPolicy() && !GameManager::get()->getGameVariable(GameVar::ShownNewgroundsDisclaimer)) {
-		GameManager::get()->setGameVariable(GameVar::ShownNewgroundsDisclaimer, true);
+	if (Settings::shouldAutoAcceptNewgroundsPolicy() && !GameManager::get()->getGameVariable(GameVar::ShownMusicTOS)) {
+		GameManager::get()->setGameVariable(GameVar::ShownMusicTOS, true);
 	}
 }
 
@@ -57,7 +57,7 @@ AutoDownloadLevelInfoLayer* AutoDownloadCustomSongWidget::getAutoDownloadLevelIn
 
 void AutoDownloadCustomSongWidget::downloadSongsOnLevelView() {
 	if (!Settings::shouldDownloadSoundsOnLevelView()) return;
-	if (!GameManager::get()->getGameVariable(GameVar::ShownNewgroundsDisclaimer)) return;
+	if (!GameManager::get()->getGameVariable(GameVar::ShownMusicTOS)) return;
 
 	forceAcceptNewgroundsPolicy();
 
@@ -71,7 +71,7 @@ void AutoDownloadCustomSongWidget::downloadSongsOnLevelView() {
 }
 
 void AutoDownloadCustomSongWidget::downloadSongsOnLevelPlay() {
-	if (!GameManager::get()->getGameVariable(GameVar::ShownNewgroundsDisclaimer)) return;
+	if (!GameManager::get()->getGameVariable(GameVar::ShownMusicTOS)) return;
 	bool downloadButtonVisible = m_downloadBtn && m_downloadBtn->isVisible();
 	auto autoDownloadLevelInfoLayer = getAutoDownloadLevelInfoLayer();
 	if ((downloadButtonVisible || m_fields->m_startedAutoDownload) && autoDownloadLevelInfoLayer) {
