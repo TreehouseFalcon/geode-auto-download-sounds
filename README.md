@@ -2,6 +2,8 @@
 
 <img src="logo.png" width="150" alt="logo" />
 
+<img src="http://localhost:5173/mods/treehousefalcon.auto-download-sounds/badge.svg?stats=downloads" alt="Downloads from index" />
+
 ## Getting started
 
 We recommend heading over to [the getting started section on our docs](https://docs.geode-sdk.org/getting-started/) for useful info on what to do next.
