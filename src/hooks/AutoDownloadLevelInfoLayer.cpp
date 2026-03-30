@@ -5,10 +5,14 @@
 #include <Geode/binding/GJGameLevel.hpp>
 #include "../managers/SettingsManager.hpp"
 
-void AutoDownloadLevelInfoLayer::init(GJGameLevel *level, bool challenge) {
-    LevelInfoLayer::init(level, challenge);
-    if (level->m_normalPercent.value() == 100) return;
-    onPlay(nullptr);
+void AutoDownloadLevelInfoLayer::levelDownloadFinished(GJGameLevel *level) {
+    LevelInfoLayer::levelDownloadFinished(level);
+    if (level->m_normalPercent.value() != 100) {
+        // geode::queueInMainThread([this] {
+        //     log::info("PLAYING");
+        // });
+        onPlay(nullptr);
+    }
 }
 
 void AutoDownloadLevelInfoLayer::showDownloadingPopup() {

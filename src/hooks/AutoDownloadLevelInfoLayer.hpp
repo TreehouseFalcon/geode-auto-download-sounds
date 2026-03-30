@@ -11,7 +11,7 @@ class $modify(AutoDownloadLevelInfoLayer, LevelInfoLayer) {
         bool skipTriggered = false;
     };
 
-    void init(GJGameLevel *level, bool challenge);
+    void levelDownloadFinished(GJGameLevel *level);
     void onPlay(CCObject* sender);
     void showDownloadingPopup();
     void closeDownloadingPopup();
