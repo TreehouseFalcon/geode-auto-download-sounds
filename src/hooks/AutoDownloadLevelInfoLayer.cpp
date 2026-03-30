@@ -2,7 +2,14 @@
 #include "AutoDownloadCustomSongWidget.hpp"
 #include <Geode/Bindings.hpp>
 #include <Geode/Enums.hpp>
+#include <Geode/binding/GJGameLevel.hpp>
 #include "../managers/SettingsManager.hpp"
+
+void AutoDownloadLevelInfoLayer::init(GJGameLevel *level, bool challenge) {
+    LevelInfoLayer::init(level, challenge);
+    if (level->m_normalPercent.value() == 100) return;
+    onPlay(nullptr);
+}
 
 void AutoDownloadLevelInfoLayer::showDownloadingPopup() {
     if (Settings::shouldDownloadSoundsNever()) return;
