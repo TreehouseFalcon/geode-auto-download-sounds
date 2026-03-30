@@ -64,6 +64,7 @@ void AutoDownloadLevelInfoLayer::onPlay(cocos2d::CCObject* sender) {
 
     bool songWidgetReady =
         (songWidget->m_deleteBtn && songWidget->m_deleteBtn->isVisible()) ||
+        (songWidget->m_errorLabel && utils::string::toLower(songWidget->m_errorLabel->getString()) == "song is not allowed for use.") ||
         !(
             (songWidget->m_cancelDownloadBtn && songWidget->m_cancelDownloadBtn->isVisible()) ||
             (songWidget->m_downloadBtn && songWidget->m_downloadBtn->isVisible())
