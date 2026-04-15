@@ -145,15 +145,24 @@ void AutoDownloadCustomSongWidget::retriggerDownloadButton() {
 	}
 }
 
-void AutoDownloadCustomSongWidget::downloadSongFinished(int id) {
-	CustomSongWidget::downloadSongFinished(id);
+void AutoDownloadCustomSongWidget::downloadAssetFinished(int id, GJAssetType assetType) {
+	if (assetType == GJAssetType::Song) {
+		CustomSongWidget::downloadSongFinished(id);
+	} else {
+		CustomSongWidget::downloadSFXFinished(id);
+	}
 	retriggerDownloadButton();
 }
 
-void AutoDownloadCustomSongWidget::downloadSFXFinished(int id) {
-	CustomSongWidget::downloadSFXFinished(id);
-	retriggerDownloadButton();
-}
+// void AutoDownloadCustomSongWidget::downloadSongFinished(int id) {
+// 	CustomSongWidget::downloadSongFinished(id);
+// 	retriggerDownloadButton();
+// }
+
+// void AutoDownloadCustomSongWidget::downloadSFXFinished(int id) {
+// 	CustomSongWidget::downloadSFXFinished(id);
+// 	retriggerDownloadButton();
+// }
 
 void AutoDownloadCustomSongWidget::updateWithMultiAssets(gd::string songList, gd::string sfxList, int bytes) {
 	CustomSongWidget::updateWithMultiAssets(songList, sfxList, bytes);

@@ -1,4 +1,9 @@
-# v1.0.1
+# v1.0.2
+
+- Attempts to fix crash on Android when downloading. If you still experience this issue on Android, please report it on Github Issues or in the Geode Discord server by pinging @treehousefalcon with your crashlog
+- Removes `geode.node-ids` as a dependency since it is not used
+
+## v1.0.1
 
 - Fixes issue with SFX downloading where some levels would not start downloading songs on level view
 

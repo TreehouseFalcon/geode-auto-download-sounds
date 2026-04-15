@@ -1,5 +1,6 @@
 #pragma once
 
+#include <Geode/Enums.hpp>
 #include <Geode/modify/CustomSongWidget.hpp>
 #include <Geode/binding/SongInfoObject.hpp>
 #include <Geode/binding/CustomSongDelegate.hpp>
@@ -28,8 +29,9 @@ public:
     void loadSongInfoFinished(SongInfoObject* songInfo);
     void downloadSongsOnLevelPlay();
     void downloadSongsOnLevelView();
-    void downloadSongFinished(int id);
-    void downloadSFXFinished(int id);
+    // void downloadSongFinished(int id);
+    // void downloadSFXFinished(int id);
+    void downloadAssetFinished(int id, GJAssetType assetType);
     void updateWithMultiAssets(gd::string songList, gd::string sfxList, int bytes);
     void retriggerDownloadButton();
     void tryPlayIfInLevelInfo();
