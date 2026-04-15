@@ -9,7 +9,7 @@
 	"id": "treehousefalcon.auto-download-sounds",
 	"name": "Auto Download Sounds",
 	"developer": "TreehouseFalcon",
-	"version": "v1.0.1",
+	"version": "v1.0.2",
 	"description": "Automatically downloads sound assets for you",
 	"tags": [
 		"online",
@@ -49,7 +49,5 @@
 			"default": false
 		}
 	},
-	"dependencies": {
-		"geode.node-ids": ">=v1.20.0"
-	}
+	"dependencies": {}
 }
