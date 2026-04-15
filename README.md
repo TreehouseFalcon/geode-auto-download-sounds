@@ -2,7 +2,7 @@
 
 <img src="logo.png" width="150" alt="logo" />
 
-<img src="https://api.geode-sdk.org/v1/mods/treehousefalcon.auto-download-sounds/status_badge?stat=version" alt="Latest mod version" /> <img src="https://api.geode-sdk.org/v1/mods/treehousefalcon.auto-download-sounds/status_badge?stat=geode_version" alt="Latest supported Geode version" /> <img src="https://api.geode-sdk.org/v1/mods/treehousefalcon.auto-download-sounds/status_badge?stat=gd_version" alt="Latest supported Geometry Dash version" /> <img src="https://api.geode-sdk.org/v1/mods/treehousefalcon.auto-download-sounds/status_badge?stat=downloads" alt="Downloads from index" />
+<img src="https://api.geode-sdk.org/v1/mods/treehousefalcon.auto-download-sounds/status_badge?stat=version" alt="Latest mod version" /> <img src="https://api.geode-sdk.org/v1/mods/treehousefalcon.auto-download-sounds/status_badge?stat=geode_version" alt="Latest supported Geode version" /> ![GD Version](https://api.geode-sdk.org/v1/mods/treehousefalcon.auto-download-sounds/status_badge?stat=gd_version) <img src="https://api.geode-sdk.org/v1/mods/treehousefalcon.auto-download-sounds/status_badge?stat=downloads" alt="Downloads from index" />
 
 ## Bug Reporting
 
