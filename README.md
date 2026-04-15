@@ -4,23 +4,6 @@
 
 <img src="https://api.geode-sdk.org/v1/mods/treehousefalcon.auto-download-sounds/status_badge?stat=version" alt="Latest mod version" /> <img src="https://api.geode-sdk.org/v1/mods/treehousefalcon.auto-download-sounds/status_badge?stat=geode_version" alt="Latest supported Geode version" /> <img src="https://api.geode-sdk.org/v1/mods/treehousefalcon.auto-download-sounds/status_badge?stat=gd_version" alt="Latest supported Geometry Dash version" /> <img src="https://api.geode-sdk.org/v1/mods/treehousefalcon.auto-download-sounds/status_badge?stat=downloads" alt="Downloads from index" />
 
-## Getting started
+## Bug Reporting
 
-We recommend heading over to [the getting started section on our docs](https://docs.geode-sdk.org/getting-started/) for useful info on what to do next.
-
-## Build instructions
-
-For more info, see [our docs](https://docs.geode-sdk.org/getting-started/create-mod#build)
-
-```sh
-# Assuming you have the Geode CLI set up already
-geode build
-```
-
-# Resources
-
-- [Geode SDK Documentation](https://docs.geode-sdk.org/)
-- [Geode SDK Source Code](https://github.com/geode-sdk/geode/)
-- [Geode CLI](https://github.com/geode-sdk/cli)
-- [Bindings](https://github.com/geode-sdk/bindings/)
-- [Dev Tools](https://github.com/geode-sdk/DevTools)
+If you encounter any issues with this mod, report them in the [Issues](https://github.com/TreehouseFalcon/geode-auto-download-sounds/issues) section of this repository.
