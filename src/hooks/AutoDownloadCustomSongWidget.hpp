@@ -24,7 +24,9 @@ public:
         bool isRobtopSong,
         bool unkBool,
         bool isMusicLibrary,
-        int unk
+        int unk,
+        bool unkBool2,
+        bool unkBool3
     );
     void loadSongInfoFinished(SongInfoObject* songInfo);
     void downloadSongsOnLevelPlay();
@@ -32,7 +34,7 @@ public:
     // void downloadSongFinished(int id);
     // void downloadSFXFinished(int id);
     void downloadAssetFinished(int id, GJAssetType assetType);
-    void updateWithMultiAssets(gd::string songList, gd::string sfxList, int bytes);
+    void updateWithMultiAssets(std::string songList, std::string sfxList, int bytes);
     void retriggerDownloadButton();
     void tryPlayIfInLevelInfo();
     void allAudiosDownloaded();

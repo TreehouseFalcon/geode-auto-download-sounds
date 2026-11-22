@@ -8,9 +8,6 @@
 void AutoDownloadLevelInfoLayer::levelDownloadFinished(GJGameLevel *level) {
     LevelInfoLayer::levelDownloadFinished(level);
     if (level->m_normalPercent.value() != 100) {
-        // geode::queueInMainThread([this] {
-        //     log::info("PLAYING");
-        // });
         onPlay(nullptr);
     }
 }
