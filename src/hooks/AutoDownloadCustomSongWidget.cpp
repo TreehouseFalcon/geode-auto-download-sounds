@@ -14,8 +14,8 @@
 
 using namespace geode::prelude;
 
-bool AutoDownloadCustomSongWidget::init(SongInfoObject* songInfo, CustomSongDelegate* songDelegate, bool showSongSelect, bool showPlayMusic, bool showDownload, bool isRobtopSong, bool unkBool, bool isMusicLibrary, int unk) {
-	if (!CustomSongWidget::init(songInfo, songDelegate, showSongSelect, showPlayMusic, showDownload, isRobtopSong, unkBool, isMusicLibrary, unk)) {
+bool AutoDownloadCustomSongWidget::init(SongInfoObject* songInfo, CustomSongDelegate* songDelegate, bool showSongSelect, bool showPlayMusic, bool showDownload, bool isRobtopSong, bool unkBool, bool isMusicLibrary, int unk, bool unkBool2, bool unkBool3) {
+	if (!CustomSongWidget::init(songInfo, songDelegate, showSongSelect, showPlayMusic, showDownload, isRobtopSong, unkBool, isMusicLibrary, unk, unkBool2, unkBool3)) {
 		return false;
 	}
 
@@ -164,7 +164,7 @@ void AutoDownloadCustomSongWidget::downloadAssetFinished(int id, GJAssetType ass
 // 	retriggerDownloadButton();
 // }
 
-void AutoDownloadCustomSongWidget::updateWithMultiAssets(gd::string songList, gd::string sfxList, int bytes) {
+void AutoDownloadCustomSongWidget::updateWithMultiAssets(std::string songList, std::string sfxList, int bytes) {
 	CustomSongWidget::updateWithMultiAssets(songList, sfxList, bytes);
 	retriggerDownloadButton();
 }
