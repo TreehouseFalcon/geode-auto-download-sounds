@@ -1,6 +1,7 @@
-name: Build Geode Mod (Reusable)
+name: Build Geode Mod
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - "main"
@@ -38,3 +39,4 @@ jobs:
       - uses: geode-sdk/build-geode-mod-docker/merge@v1
         with:
           upload: true
+          upload-zip: true
